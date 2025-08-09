@@ -23,6 +23,6 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        uses: withastro/action@v0.3.1
+        uses: withastro/action@v4
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
