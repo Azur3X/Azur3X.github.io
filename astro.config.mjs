@@ -1,10 +1,8 @@
-// @ts-check
 import { defineConfig } from "astro/config";
-import tailwindcss from "@tailwindcss/vite";
+import tailwind from "@astrojs/tailwind";
 
-// https://astro.build/config
 export default defineConfig({
-  vite: {
-    plugins: [tailwindcss()],
-  },
+  site: "https://Azur3X.github.io", // your GitHub Pages URL or custom domain
+  base: "/", // use "/" for user/organization pages, or "/repo-name/" for project pages
+  integrations: [tailwind()],
 });
